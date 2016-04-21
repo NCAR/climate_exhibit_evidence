@@ -1,0 +1,12 @@
+/* begin general styles */
+body {
+    background-color:#fff;
+    color:#000;
+}
+.video-description {
+    color:#000;
+}
+.home,
+.videos {
+    background-image: url(/core/assets/images/bkg/MLsnow_ts4.jpg);
+}

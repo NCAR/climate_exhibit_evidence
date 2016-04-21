@@ -1,0 +1,50 @@
+{
+    "home": [
+       
+        {
+            "id": 3,
+            "active": true,
+            "title": "Videos",
+            "description": "Watch videos about modeling and computer systems in the atmospheric sciences",
+            "url": "#/videos",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/musical_data.jpg",
+                "mp4": "/core/assets/videos/menu/musical_data.mp4",
+                "width": 475,
+                "height": 243
+            }
+            }
+        ],
+    "videos": [
+        {
+
+            "id": "musical_data",
+            "active": true,
+            "title": "Planetary Bands: Warming World",
+            "description": "<p></p>",
+            "url": "#/videos/music_data",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/musical_data.jpg",
+                "thumb": "/core/assets/images/menu/musical_data-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/musical_data.mp4",
+                "width": 475,
+                "height": 243
+            }
+        },
+        {
+
+            "id": "jerrycap",
+            "active": true,
+            "title": "Climate Detective",
+            "description": "<p></p>",
+            "url": "#/videos/detective",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/jerrycap.jpg",
+                "thumb": "/core/assets/images/menu/jerrycap-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/jerrycap.mp4",
+                "width": 475,
+                "height": 243
+            }
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "videos": [
+        {
+
+            "id": "music_data",
+            "active": true,
+            "title": "Planetary Band: Warming World",
+            "description": "<p></p>",
+            "url": "#/videos/music_data",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/musical_data.jpg",
+                "thumb": "/core/assets/images/menu/musical_data-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/musical_data.mp4",
+                "width": 900,
+                "height": 500
+            },
+            "sources": [
+                {
+                    "src": "/core/assets/videos/climate/evidence/musical_data.mp4",
+                    "type": "video/mp4"
+                    }
+				],
+            "theme": "/core/bower_components/videogular-themes-default/videogular.css",
+            "plugins": {
+                "poster": "/core/assets/images/posterframes/musical_data.jpg",
+                "analytics": {
+                    "category": "Video",
+                    "label": "Musical Data",
+                    "events": {
+                        "ready": true,
+                        "play": true,
+                        "pause": true,
+                        "stop": true,
+                        "complete": true,
+                        "progress": 10
+                    }
+                }
+            }
+        },
+        {
+            "id": "detective",
+            "active": true,
+            "title": "Climate Detective",
+            "description": "<p>.</p>",
+            "url": "#/videos/detective",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/jerrycap.jpg",
+                "thumb": "/core/assets/images/menu/jerrycap-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/jerrycap.mp4",
+                "width": 475,
+                "height": 243
+            },
+            "sources": [
+                {
+                    "src": "/core/assets/videos/climate/evidence/jerrycap.mp4",
+                    "type": "video/mp4"
+                    }
+				],
+            "theme": "/core/bower_components/videogular-themes-default/videogular.css",
+            "plugins": {
+                "poster": "/core/assets/images/posterframes/jerrycap.jpg",
+                "analytics": {
+                    "category": "Video",
+                    "label": "Data Center",
+                    "events": {
+                        "ready": true,
+                        "play": true,
+                        "pause": true,
+                        "stop": true,
+                        "complete": true,
+                        "progress": 10
+                    }
+                }
+            }
+        }
+    ]
+}
