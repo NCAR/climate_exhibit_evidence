@@ -2,7 +2,19 @@
     "home": [
        
         {
-            "id": 3,
+            "id": 1,
+            "active": true,
+            "title": "MODEL-IT",
+            "description": "DESCR HERE",
+            "url": "#/apps/model-it",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/climate_evidence_chart.png",
+                "width":476,
+                "height":244
+            }
+        },
+        {
+            "id": 2,
             "active": true,
             "title": "Videos",
             "description": "Watch videos about modeling and computer systems in the atmospheric sciences",

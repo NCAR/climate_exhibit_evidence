@@ -1,0 +1,319 @@
+/*beging model it out*/
+#model-it * {
+    /*color:white;*/
+    font-family: 'Roboto Slab', serif;
+    -webkit-touch-callout:none;
+    -webkit-user-drag:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    outline: none;
+}
+
+
+#model-it #app-header {
+
+}
+#model-it .model-it-out-title {
+    background:url('/core/assets/apps/modelit/images/header_yellow.jpg');/*#ffcc0e;*/
+    /* padding: 2em; */
+    height: 14em;
+}
+#model-it .model-it-out-title #app_header-image
+{
+    background:url('/core/assets/apps/modelit/images/title.png') no-repeat;
+    text-indent: -9999px;
+    background-size: 100%;
+    min-height: 90px;
+    margin-top: 1.5em;
+}
+#model-it .model-it-out-title #model-it-out-intro-text
+{
+    padding-top: 3.3em;
+    font-size: 1.3em;
+}
+
+#model-it .model-it-out-title #reset-button-div > button
+{
+    text-indent: -9999px;
+    /*background: url('/core/assets/apps/modelit/images/ResetButton.png') no-repeat #f23573;*/
+    color:white;
+    background: url('/core/assets/apps/modelit/images/ResetButton.png') no-repeat transparent;
+    width: 11em;
+    height: 5em;
+    margin-top: 5em;
+}
+#model-it .model-it-out-title #reset-button-div > button:before
+{
+    content: '';
+    background: url('/core/assets/apps/modelit/images/ResetButton.png') no-repeat #f23573;
+    color:white;
+}
+
+#model-it #model-chart h3 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 19px;
+    /*font-size: 1.8em;
+    margin-top: 5px;
+    margin-bottom:28px;*/
+}
+#model-it #badge {
+    position:absolute;
+    top: 354px;
+    left: 1202px;
+    width: 75px;
+    height: 75px;
+    background: url('/core/assets/apps/modelit/images/badge_over_six.png') no-repeat;
+    background-size: 100%;
+}
+#model-it #badge.golden-badge
+{
+    background-image: url('/core/assets/apps/modelit/images/badge_six.png');
+}
+
+#model-it #chart-side {
+    background:url('/core/assets/apps/modelit/images/bg_left.jpg') transparent;
+    /*background-color:#8ae9ed;*/
+}
+#model-it #chart-legend {
+    background-color: #122026;
+    background-image:url('/core/assets/apps/modelit/images/bg_middle.jpg');
+    padding-bottom: 2em;
+    padding-left: 0;
+    padding-right: 0;
+}
+#model-it #chart-legend #legend-color-line
+{
+    height: 100%;
+    position: absolute;
+    top: 0em;
+    width: 16px;
+    /*background-color: transparent;*/
+    left: 307px;
+}
+#model-it .chart-legend-item {
+    padding-top: 0.8em;
+    padding-left: 0.4em;
+    height:74px;
+}
+#model-it .chart-legend-item img {
+    width: 4em;
+    margin-left: 20px;
+    z-index: 10;
+    position: absolute;
+    top: 2px;
+}
+#model-it .chart-legend-item span.legend-text
+{
+    position: absolute;
+    left: 142px;
+    top: 12px;
+    font-size:1.3em;
+    font-weight: bold;
+}   
+#model-it .no-button-looks {
+    border:0px solid transparent;
+    background: none;
+    display: block;
+    color:#fff;
+}
+
+#model-it .chart-data {
+    min-height: 17em;
+    padding: 1em;
+    /*height:250px;*/
+}
+#model-it .chart-data.choose
+{
+    border-top: 3px white dashed;
+    font-weight: bold;
+    font-size:1.3em;
+    padding:0;
+}
+#model-it .chart-data.choose p
+{
+    margin-top:1em;
+    font-weight:normal;
+    font-size:0.8em;
+}
+#model-it .chart-data.choose input[type=radio]
+{
+    /*content:url('/core/assets/apps/modelit/images/radio_no.png') ;*/
+    width: 35px;
+    /*height: 35px;*/
+    margin-top: 1em;
+    margin-bottom: -12px;
+    float:left;
+}
+#model-it .chart-data.choose input[type=radio] + div
+{
+    width: 13em;
+    margin-left: 2em;
+}
+#model-it .chart-data.choose input[type="radio"]:checked {
+    /*content: url('/core/assets/apps/modelit/images/radio_yes.png');*/
+    margin-top: 1em;
+    margin-bottom: -12px;
+}
+#model-it .chart-data.choose input[type="radio"]:checked + div
+{
+    color:#000;
+    width: 13em;
+    margin-left: 2em;
+}
+#model-it .chart-data.choose input[type="radio"]:checked + div + p
+{
+    font-weight: bold;
+}
+/*:checked + span { font-weight: bold; }*/
+#model-it .chart-data.choose label
+{
+    /*margin-top: 1em;  */
+    padding:1em;
+}
+#model-it .chart-data.choose label div
+{
+    color: #5274A0;
+}
+#model-it .chart-data h4 {
+    font-weight: bold;
+}
+#model-it #chart-data-side #chart-data-title
+{
+    background-color:black;
+    color:white;
+    text-align:center;
+}
+#model-it #chart-data-side #chart-data-title h3
+{
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#model-it .factor-policy {
+    width:18px;
+    height:18px;
+    float:left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: -13px;
+}
+#model-it .factor-policy.usual {
+    /*background-color:transparent;*/
+    background-image:none !important;
+}
+#model-it .factor-policy.policy {
+    /*background-color: #f23573;*/
+    background-image: url('/core/assets/apps/modelit/images/check.png');
+    background-repeat: no-repeat;
+}
+#model-it .factor-policy-color {
+    /*background-color: #4459c8;*/
+    width: 65px;
+    height: 36px;
+    margin-top: 0px;
+    margin-left: 30px;
+    position: absolute;
+    top: 6px;
+    left: 41px;
+}
+#model-it .factor-policy-color.selected {
+    width:236px;
+    -webkit-transition: width 0.5s ease-out;
+    -moz-transition: width 0.5s ease-out;
+    -ms-transition: width 0.5s ease-out;
+    -o-transition: width 0.5s ease-out;
+    transition: width 0.5s ease-out;
+}
+
+#model-it #chart_hist_container
+{
+    position: absolute;
+    width: 263px;
+    height: 620px;
+    background-color: #DDD;
+    opacity: 0.8;
+    top:59px;
+    padding:0;
+    left: 156px;
+    padding-top: 1em;  
+}
+#model-it #chart_historical_div
+{
+    position: absolute;
+    width: 263px;
+    /*height:315px;*/
+    /*top:380px;*/
+    height: 313px;
+    top: 382px;
+}
+
+#model-it #chart-data-details
+{
+    height: 53em;
+    background:url('/core/assets/apps/modelit/images/bg_right.jpg');
+}
+#model-it h3#chart_future_title
+{
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 100000;
+    top: 72px;
+    left: 680px;
+}
+#model-it h5#chart_temp_limit
+{
+    position: absolute;
+    color:#f23573;
+    font-weight: bold;
+    font-size: 1.2em;
+    /*top: 372px;*/
+    top: 366px;
+    left: 440px;
+}
+
+/*end of model it out */
+
+
+
+
+@media (min-width: 1200px) {
+    .videogular-container {
+        width: 1170px;
+        height: 658.125px;
+    }
+    .videogular-container.audio {
+        width: 1170px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .videogular-container {
+        width: 940px;
+        height: 528.75px;
+    }
+    .videogular-container.audio {
+        width: 940px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .videogular-container {
+        width: 728px;
+        height: 409.5px;
+    }
+    .videogular-container.audio {
+        width: 728px;
+        height: 50px;
+    }
+}

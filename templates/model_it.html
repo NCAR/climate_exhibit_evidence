@@ -1,0 +1,80 @@
+<div id="model-it" class="container-fluid" style="margin-left:-15px">
+    <div class="row model-it-out-title">
+        <div class="col-md-4"><h1 id="app_header-image">Model It Out</h1></div>
+        
+        <div id="model-it-out-intro-text" class="col-md-6">
+            <span>Climate models help scientists predict the future climate. Experts agree that in order to avoid devastating impacts, we can’t exceed more than 3.6&deg; F (2&deg; C) of warming since pre-industrial levels. To meet this goal within the next century, humanity must take immediate actions to reduce emissions of greenhouse gases.</span>
+        </div>
+        <div id="reset-button-div" class="col-md-2" style="text-align: center;">
+            <button class="btn" ng-click="resetModel()">RESET</button>
+        </div>    
+    </div>
+
+    <div class="row">
+        <div id="chart-side" class="col-md-8">
+            <div id="model-chart" class="row">
+                <h3><span style="text-align:left;font-size:0.75em">Can you figure out how to stay below the target by changing only 6 activities? Hint: there are a few right answers!</span></h3>
+
+                <div id="chart_div" style="width:90%;height:700px;margin-left: 5.5em;margin-right: auto;margin-bottom: 3em;"></div>
+                <div id="chart_hist_container">
+                    <h3>Historical Data</h3>
+                    <div id="chart_historical_div" ></div><!--style="width:10%;height:230px;position:absolute;top:410px;left:290px"-->
+                </div>
+                <h3 id="chart_future_title">Future Projection</h3>
+                <h5 id="chart_temp_limit">3.6&deg; F (2&deg; C) Target</h5>
+                <div id="badge" ng-class="{'golden-badge':showGoldenBadge}" ng-if="showBadge"></div>
+            </div>
+        </div>
+
+        <div id="chart-data-side" class="col-md-4">
+            <div class="row" id="chart-data-title">
+                <!-- <h4><strong>Select the Activities You Want to Change</strong></h4> -->
+                <h3>Select the Activities You Want to Change</h3>
+            </div>
+        
+            <div class="row">
+
+                <div id="chart-legend" class="col-md-6" >
+                    <div id="legend-color-line" style="background-color:{{selectedFactor.color}}"></div>
+                    <!-- MAKE THIS AN NG-REPEAT-->
+                    <div ng-repeat="aFactor in allFactors | orderBy:'-order_num'" class="col-md-12 chart-legend-item" ng-click="selectFactor(aFactor.order_num)">
+                        <div class="factor-policy {{aFactor.policy}}"></div> 
+                        <button class="no-button-looks" >
+                            <div class="factor-policy-color" style="background-color:{{aFactor.color}}" ng-class="{'selected':(selectedFactor==aFactor)}"></div>
+                            <img ng-src="/core/assets/apps/modelit/images/legend_{{aFactor.icon_class}}.png"/> <!--icon class maybe through class and not ng-src-->
+                            <span class="legend-text">{{aFactor.legend_label}}</span>
+                        </button>
+                    </div> 
+                </div>
+
+                <div id="chart-data-details" class="col-md-6">
+                    <div class="row chart-data">
+                        <h4 ng-bind-html="selectedFactor.title | unsafe"></h4>
+                        <p ng-bind-html="selectedFactor.factor_description | unsafe"></p>
+                    </div>
+                    <div class="row chart-data choose" ng-if="selectedFactor.order_num != null">
+                        <form>
+                            <label style="height:230px;overflow: hidden;margin-bottom: 0.5em;">
+                                <input type="radio" ng-model="selectedFactor.policy" ng-change="toggleFactor(selectedFactor.order_num+1)" value="usual"/>
+                                <div>High Emissions <br/>(current pathway)</div>
+                                <p ng-bind-html="selectedFactor.business_as_usual_text | unsafe"></p>
+                                
+                            </label>
+                            <label  style="height:200px;padding-top: 0">
+                                <input type="radio" ng-model="selectedFactor.policy" ng-change="toggleFactor(selectedFactor.order_num+1)" value="policy"/>
+                                <div>Low Emissions <br/>(immediate reductions)</div>
+                                <p ng-bind-html="selectedFactor.policy_text | unsafe"></p>
+                            </label>
+                        </form>
+                        <!-- <p ng-bind-html="selectedFactor.business_as_usual_text | unsafe" ng-if="selectedFactor.policy == 'usual'"></p> -->
+                        <!-- <p ng-bind-html="selectedFactor.policy_text | unsafe" ng-if="selectedFactor.policy == 'policy'"></p> -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<ml-exhibits-footer-menu ng-if="showFooter" pagetitle="pagetitle" back-button-text="backButtonText" back-button="backButton" back-page="backPage"></ml-exhibits-footer-menu>

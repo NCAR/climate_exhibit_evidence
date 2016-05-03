@@ -2,6 +2,7 @@ angular.module("edu.ucar.scied.evidence", [
     "edu.ucar.scied.controllers", 
     "edu.ucar.scied.controllers.videos",
     "edu.ucar.scied.controllers.evidence",
+    "edu.ucar.scied.controllers.evidence.model_it",
     "edu.ucar.scied.services",
     "edu.ucar.scied.directives",
     "edu.ucar.scied.filters",
@@ -33,6 +34,10 @@ config(["$routeProvider", function($routeProvider) {
             templateUrl: "/core/templates/video_player.html", 
             controller: "playerCtrl"
         }
-    ).
+    ).  
+    when("/apps/model-it", {
+        templateUrl: "templates/model_it.html",
+        controller: "modelItCtrl"
+    }).
 	otherwise({redirectTo: '/'});
 }]);
