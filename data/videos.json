@@ -4,8 +4,8 @@
 
             "id": "music_data",
             "active": true,
-            "title": "Planetary Band: Warming World",
-            "description": "<p></p>",
+            "title": "Planetary Bands, Warming World",
+            "description": "<p>Based on surface temperature analysis from NASA’s Goddard Institute for Space Studies, the composition \"Planetary Bands, Warming World\" uses music to create a visceral encounter with more than a century’s worth of weather data collected across the northern half of the planet.</p><p><strong>Credit:</strong> University of Minnesota student Daniel Crawford and geography professor Scott St. George</p>",
             "url": "#/videos/music_data",
             "placeholder": {
                 "image": "/core/assets/images/menu/posterframes/musical_data.jpg",
@@ -41,7 +41,7 @@
             "id": "detective",
             "active": true,
             "title": "Climate Detective",
-            "description": "<p>.</p>",
+            "description": "<p>A recent lull in global air temperature warming has led people to ask if the rise in temperatures has stopped or slowed down. In this video by Earth Vision Trust, Jerry Meehl, from the National Center for Atmospheric Research, explains the data that shows our global temperature is, indeed, increasing.</p><p><strong>Credit:</strong> Earth Vision Trust @ http://earthvisioninstitute.org/</p>",
             "url": "#/videos/detective",
             "placeholder": {
                 "image": "/core/assets/images/menu/posterframes/jerrycap.jpg",
