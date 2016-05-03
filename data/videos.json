@@ -61,7 +61,43 @@
                 "poster": "/core/assets/images/posterframes/jerrycap.jpg",
                 "analytics": {
                     "category": "Video",
-                    "label": "Data Center",
+                    "label": "Jerrycap",
+                    "events": {
+                        "ready": true,
+                        "play": true,
+                        "pause": true,
+                        "stop": true,
+                        "complete": true,
+                        "progress": 10
+                    }
+                }
+            }
+        },
+        {
+            "id": "greenland",
+            "active": true,
+            "title": "Greenland's Ice Layers",
+            "description": "<p>This animation shows a new 3D age map of the Greenland Ice Sheet and explains how it was created and describes the three distinct periods of climate that are evident within the ice sheet.</p><p><strong>Credit:</strong> NASA's Scientific Visualization Studio</p>",
+            "url": "#/videos/greenland",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/climate_evidence_greenland.jpg",
+                "thumb": "/core/assets/images/menu/climate_evidence_greenland-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/climate_evidence_greenland.mp4",
+                "width": 475,
+                "height": 243
+            },
+            "sources": [
+                {
+                    "src": "/core/assets/videos/climate/evidence/climate_evidence_greenland.mp4",
+                    "type": "video/mp4"
+                    }
+				],
+            "theme": "/core/bower_components/videogular-themes-default/videogular.css",
+            "plugins": {
+                "poster": "/core/assets/images/posterframes/climate_evidence_greenland.jpg",
+                "analytics": {
+                    "category": "Video",
+                    "label": "Greenland",
                     "events": {
                         "ready": true,
                         "play": true,

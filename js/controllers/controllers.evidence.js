@@ -12,6 +12,7 @@ controller('homeCtrl', function ($rootScope, $scope) {
     $rootScope.menulist = 'videos';
     $scope.pagetitle = "Videos";
     $scope.header_class = "larger";
+    $scope.cols = 3;
     $scope.data = 'data/menu_main.json';
 })
 .controller('playerCtrl', function($rootScope,$scope){

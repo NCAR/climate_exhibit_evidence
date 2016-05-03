@@ -8,7 +8,7 @@
             "description": "DESCR HERE",
             "url": "#/apps/model-it",
             "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/climate_evidence_chart.png",
+                "image": "/core/assets/images/menu/posterframes/climate_evidence_chart.jpg",
                 "width":476,
                 "height":244
             }
@@ -54,6 +54,21 @@
                 "image": "/core/assets/images/menu/posterframes/jerrycap.jpg",
                 "thumb": "/core/assets/images/menu/jerrycap-thumb.jpg",
                 "mp4": "/core/assets/videos/menu/jerrycap.mp4",
+                "width": 475,
+                "height": 243
+            }
+        },
+        {
+
+            "id": "greenland",
+            "active": true,
+            "title": "Greenland's Ice Layers",
+            "description": "<p></p>",
+            "url": "#/videos/greenland",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/climate_evidence_greenland.jpg",
+                "thumb": "/core/assets/images/menu/climate_evidence_greenland-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/climate_evidence_greenland.mp4",
                 "width": 475,
                 "height": 243
             }
