@@ -77,7 +77,7 @@
             "id": "greenland",
             "active": true,
             "title": "Greenland's Ice Layers",
-            "description": "<p>This animation shows a new 3D age map of the Greenland Ice Sheet and explains how it was created and describes the three distinct periods of climate that are evident within the ice sheet.</p><p><strong>Credit:</strong> NASA's Goddard Space Flight Center Scientific Visualization Studio</p>",
+            "description": "<p>This animation shows a new 3D age map of the Greenland Ice Sheet and explains how it was created and describes the three distinct periods of climate that are evident within the ice sheet.</p><p><strong>Credit:</strong> NASA's Scientific Visualization Studio</p>",
             "url": "#/videos/greenland",
             "placeholder": {
                 "image": "/core/assets/images/menu/posterframes/climate_evidence_greenland.jpg",
