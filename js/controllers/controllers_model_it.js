@@ -7,16 +7,18 @@
         $rootScope.showFooter = true;
         $scope.backButton = false;
         $scope.pagetitle = "Model It Out";
-
         $scope.allFactors = [];
         $scope.selectedFactor = {};
         $scope.tempLimit = 2;
         $scope.historicalData = [];
         $scope.showBadge = false;
-
         var targetTemp = 0;
-
         var columnMask = [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+        $scope.selectFactor = selectFactorFunc;
+        $scope.toggleFactor = toggleFactorFunc;
+        $scope.resetModel = resetModelFunc;
+
 
         var dataTableUsual = [
           ['Year', 'Baseline', 'Coal Power Plants', 'Natual Gas', 'Waste', 'Farming', 'Factories', 'Buildings', 'Houses', 'Ships', 'Planes', 'Cars & Trucks'],
@@ -50,15 +52,16 @@
 
 
         ContentData('data/modelItOut/model_it_out.json')
-            .success(function (list) {
-                $scope.data = list['data'];
-                $scope.allFactors = $scope.data.factors;
-                $scope.tempLimit = $scope.data.temp_limit;
-                $scope.historicalData = $scope.data.historical_data;
+            .success(processData);
 
-                init();
-            });
+        function processData(list) {
+            $scope.data = list['data'];
+            $scope.allFactors = $scope.data.factors;
+            $scope.tempLimit = $scope.data.temp_limit;
+            $scope.historicalData = $scope.data.historical_data;
 
+            init();
+        }
 
         function init() {
             if (!$rootScope.modelChartHasInitialized) {
@@ -332,16 +335,16 @@
         }
 
 
-        $scope.selectFactor = function (anIndex) {
+        function selectFactorFunc(anIndex) {
             $scope.selectedFactor = $scope.allFactors[anIndex - 1];
         }
 
-        $scope.toggleFactor = function (anIndex) {
+        function toggleFactorFunc(anIndex) {
             columnMask[anIndex] = (columnMask[anIndex] == 1) ? 0 : 1; //columnMask[0] is always 1 because it holds the years
             drawChart();
         }
 
-        $scope.resetModel = function () {
+        function resetModelFunc() {
             columnMask = [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
             $scope.selectedFactor = {};
             angular.forEach($scope.allFactors, function (anItem, key) {
@@ -350,44 +353,6 @@
             drawChart();
         }
 
-
-
-        $scope.launchVideo = function (id) {
-            $.each($scope.data, function (index, value) {
-                if (id == value.id) {
-                    $("#" + value.image.id).attr("src", value.image.off.path);
-                    $("#" + value.text.id).css("display", "inline");
-                    $("#" + value.videoHolderId).css({
-                        display: "inline"
-                    });
-                    $("#" + value.videoId).get(0).play();
-
-                } else {
-                    $("#" + value.image.id).attr("src", value.image.on.path);
-                    $("#" + value.text.id).css("display", "none");
-                    $("#" + value.videoHolderId).css({
-                        display: "none"
-                    });
-                    $("#" + value.videoId).get(0).pause();
-                    $("#" + value.videoId).get(0).currentTime = 0;
-                }
-            });
-
-        };
-
-        $scope.$on('$viewContentLoaded', function () {
-            $.each($scope.data, function (index, value) {
-                if (id == value.id) {
-                    $("#" + value.image.id).attr("src", value.image.off.path);
-                    $("#" + value.text.id).css("display", "inline");
-                    $("#" + value.videoHolderId).css({
-                        display: "none"
-                    });
-                    $("#" + value.videoId).get(0).pause();
-
-                }
-            });
-        });
 
     };
 
