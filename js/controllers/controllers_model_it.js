@@ -3,8 +3,8 @@
     angular.module('edu.ucar.scied.controllers.evidence.model_it', [])
         .controller('modelItCtrl', modelItCtrl);
 
-    function modelItCtrl($rootScope, $scope, ContentData,Footer) {
-        $rootScope.showFooter = true;
+    function modelItCtrl($rootScope, $scope, ContentData,Footer,WebApp) {
+        WebApp.setShowFooter(true);       
         Footer.setBackButton(false);       
         Footer.setPageTitle("Model It Out");
         $scope.allFactors = [];

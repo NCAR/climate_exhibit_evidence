@@ -6,6 +6,7 @@
     "edu.ucar.scied.controllers.evidence",
     "edu.ucar.scied.controllers.evidence.model_it",
     "edu.ucar.scied.services",
+    "edu.ucar.scied.services.webapp",
     "edu.ucar.scied.services.footer",
     "edu.ucar.scied.directives.footer",
     "edu.ucar.scied.filters",
