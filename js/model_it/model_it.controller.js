@@ -1,9 +1,9 @@
 (function () {
     'use strict';
-    angular.module('edu.ucar.scied.controllers.evidence.model_it', [])
+    angular.module('edu.ucar.scied.model_it.controller', [])
         .controller('modelItCtrl', modelItCtrl);
-
-    function modelItCtrl($rootScope, $scope, ContentData,Footer,WebApp) {
+    modelItCtrl.$inject = ['$rootScope', '$scope', 'ContentData', 'Footer', 'WebApp'];
+    function modelItCtrl($rootScope, $scope, ContentData, Footer, WebApp) {
         WebApp.setShowFooter(true);       
         Footer.setBackButton(false);       
         Footer.setPageTitle("Model It Out");
