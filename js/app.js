@@ -23,19 +23,19 @@
     config(["$routeProvider", function ($routeProvider) {
         $routeProvider.
         when("/", {
-            templateUrl: "/core/templates/menu_grid.html",
+            templateUrl: "/core/js/menulist/menu_grid.html",
             controller: "homeCtrl",
         }).
         when("/videos", {
-            templateUrl: "/core/templates/menu_grid.html",
+            templateUrl: "/core/js/menulist/menu_grid.html",
             controller: "videosCtrl",
         }).
         when("/videos/:videoId", {
-            templateUrl: "/core/templates/video_player.html",
+            templateUrl: "/core/js/videos/video_player.html",
             controller: "playerCtrl"
         }).
         when("/apps/model-it", {
-            templateUrl: "templates/model_it.html",
+            templateUrl: "js/model_it/model_it.html",
             controller: "modelItCtrl"
         }).
         otherwise({
