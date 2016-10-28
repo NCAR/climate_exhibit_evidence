@@ -8,21 +8,21 @@
             "description": "<p>Based on surface temperature analysis from NASA’s Goddard Institute for Space Studies, the composition \"Planetary Bands, Warming World\" uses music to create a visceral encounter with more than a century’s worth of weather data collected across the northern half of the planet.</p><p><strong>Credit:</strong> University of Minnesota student Daniel Crawford and geography professor Scott St. George</p>",
             "url": "#/videos/music_data",
             "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/musical_data.jpg",
-                "thumb": "/core/assets/images/menu/musical_data-thumb.jpg",
-                "mp4": "/core/assets/videos/menu/musical_data.mp4",
+                "image": "/assets/images/menu/posterframes/musical_data.jpg",
+                "thumb": "/assets/images/menu/musical_data-thumb.jpg",
+                "mp4": "/assets/videos/menu/musical_data.mp4",
                 "width": 900,
                 "height": 500
             },
             "sources": [
                 {
-                    "src": "/core/assets/videos/climate/evidence/musical_data.mp4",
+                    "src": "/assets/videos/climate/evidence/musical_data.mp4",
                     "type": "video/mp4"
                     }
 				],
             "theme": "/core/bower_components/videogular-themes-default/videogular.css",
             "plugins": {
-                "poster": "/core/assets/images/posterframes/musical_data.jpg",
+                "poster": "/assets/images/posterframes/musical_data.jpg",
                 "analytics": {
                     "category": "Video",
                     "label": "Musical Data",
@@ -44,21 +44,21 @@
             "description": "<p>A recent lull in global air temperature warming has led people to ask if the rise in temperatures has stopped or slowed down. In this video by Earth Vision Trust, Jerry Meehl, from the National Center for Atmospheric Research, explains the data that shows our global temperature is, indeed, increasing.</p><p><strong>Credit:</strong> Earth Vision Trust @ http://earthvisioninstitute.org/</p>",
             "url": "#/videos/detective",
             "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/jerrycap.jpg",
-                "thumb": "/core/assets/images/menu/jerrycap-thumb.jpg",
-                "mp4": "/core/assets/videos/menu/jerrycap.mp4",
+                "image": "/assets/images/menu/posterframes/jerrycap.jpg",
+                "thumb": "/assets/images/menu/jerrycap-thumb.jpg",
+                "mp4": "/assets/videos/menu/jerrycap.mp4",
                 "width": 475,
                 "height": 243
             },
             "sources": [
                 {
-                    "src": "/core/assets/videos/climate/evidence/jerrycap.mp4",
+                    "src": "/assets/videos/climate/evidence/jerrycap.mp4",
                     "type": "video/mp4"
                     }
 				],
             "theme": "/core/bower_components/videogular-themes-default/videogular.css",
             "plugins": {
-                "poster": "/core/assets/images/posterframes/jerrycap.jpg",
+                "poster": "/assets/images/posterframes/jerrycap.jpg",
                 "analytics": {
                     "category": "Video",
                     "label": "Jerrycap",
@@ -80,21 +80,21 @@
             "description": "<p>This animation shows a new 3D age map of the Greenland Ice Sheet and explains how it was created and describes the three distinct periods of climate that are evident within the ice sheet.</p><p><strong>Credit:</strong> NASA's Scientific Visualization Studio</p>",
             "url": "#/videos/greenland",
             "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/climate_evidence_greenland.jpg",
-                "thumb": "/core/assets/images/menu/climate_evidence_greenland-thumb.jpg",
-                "mp4": "/core/assets/videos/menu/climate_evidence_greenland.mp4",
+                "image": "/assets/images/menu/posterframes/climate_evidence_greenland.jpg",
+                "thumb": "/assets/images/menu/climate_evidence_greenland-thumb.jpg",
+                "mp4": "/assets/videos/menu/climate_evidence_greenland.mp4",
                 "width": 475,
                 "height": 243
             },
             "sources": [
                 {
-                    "src": "/core/assets/videos/climate/evidence/climate_evidence_greenland.mp4",
+                    "src": "/assets/videos/climate/evidence/climate_evidence_greenland.mp4",
                     "type": "video/mp4"
                     }
 				],
             "theme": "/core/bower_components/videogular-themes-default/videogular.css",
             "plugins": {
-                "poster": "/core/assets/images/posterframes/climate_evidence_greenland.jpg",
+                "poster": "/assets/images/posterframes/climate_evidence_greenland.jpg",
                 "analytics": {
                     "category": "Video",
                     "label": "Greenland",

@@ -18,13 +18,13 @@
 
 }
 #model-it .model-it-out-title {
-    background:url('/core/assets/apps/modelit/images/header_yellow.jpg');/*#ffcc0e;*/
+    background:url('/assets/apps/modelit/images/header_yellow.jpg');/*#ffcc0e;*/
     /* padding: 2em; */
     height: 14em;
 }
 #model-it .model-it-out-title #app_header-image
 {
-    background:url('/core/assets/apps/modelit/images/title.png') no-repeat;
+    background:url('/assets/apps/modelit/images/title.png') no-repeat;
     text-indent: -9999px;
     background-size: 100%;
     min-height: 90px;
@@ -39,9 +39,9 @@
 #model-it .model-it-out-title #reset-button-div > button
 {
     text-indent: -9999px;
-    /*background: url('/core/assets/apps/modelit/images/ResetButton.png') no-repeat #f23573;*/
+    /*background: url('/assets/apps/modelit/images/ResetButton.png') no-repeat #f23573;*/
     color:white;
-    background: url('/core/assets/apps/modelit/images/ResetButton.png') no-repeat transparent;
+    background: url('/assets/apps/modelit/images/ResetButton.png') no-repeat transparent;
     width: 11em;
     height: 5em;
     margin-top: 5em;
@@ -49,7 +49,7 @@
 #model-it .model-it-out-title #reset-button-div > button:before
 {
     content: '';
-    background: url('/core/assets/apps/modelit/images/ResetButton.png') no-repeat #f23573;
+    background: url('/assets/apps/modelit/images/ResetButton.png') no-repeat #f23573;
     color:white;
 }
 
@@ -70,21 +70,21 @@
     left: 1202px;
     width: 75px;
     height: 75px;
-    background: url('/core/assets/apps/modelit/images/badge_over_six.png') no-repeat;
+    background: url('/assets/apps/modelit/images/badge_over_six.png') no-repeat;
     background-size: 100%;
 }
 #model-it #badge.golden-badge
 {
-    background-image: url('/core/assets/apps/modelit/images/badge_six.png');
+    background-image: url('/assets/apps/modelit/images/badge_six.png');
 }
 
 #model-it #chart-side {
-    background:url('/core/assets/apps/modelit/images/bg_left.jpg') transparent;
+    background:url('/assets/apps/modelit/images/bg_left.jpg') transparent;
     /*background-color:#8ae9ed;*/
 }
 #model-it #chart-legend {
     background-color: #122026;
-    background-image:url('/core/assets/apps/modelit/images/bg_middle.jpg');
+    background-image:url('/assets/apps/modelit/images/bg_middle.jpg');
     padding-bottom: 2em;
     padding-left: 0;
     padding-right: 0;
@@ -145,7 +145,7 @@
 }
 #model-it .chart-data.choose input[type=radio]
 {
-    /*content:url('/core/assets/apps/modelit/images/radio_no.png') ;*/
+    /*content:url('/assets/apps/modelit/images/radio_no.png') ;*/
     width: 35px;
     /*height: 35px;*/
     margin-top: 1em;
@@ -158,7 +158,7 @@
     margin-left: 2em;
 }
 #model-it .chart-data.choose input[type="radio"]:checked {
-    /*content: url('/core/assets/apps/modelit/images/radio_yes.png');*/
+    /*content: url('/assets/apps/modelit/images/radio_yes.png');*/
     margin-top: 1em;
     margin-bottom: -12px;
 }
@@ -211,7 +211,7 @@
 }
 #model-it .factor-policy.policy {
     /*background-color: #f23573;*/
-    background-image: url('/core/assets/apps/modelit/images/check.png');
+    background-image: url('/assets/apps/modelit/images/check.png');
     background-repeat: no-repeat;
 }
 #model-it .factor-policy-color {
@@ -258,7 +258,7 @@
 #model-it #chart-data-details
 {
     height: 53em;
-    background:url('/core/assets/apps/modelit/images/bg_right.jpg');
+    background:url('/assets/apps/modelit/images/bg_right.jpg');
 }
 #model-it h3#chart_future_title
 {
