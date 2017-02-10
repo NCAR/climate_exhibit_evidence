@@ -28,6 +28,7 @@
     function playerCtrl(Footer, WebApp) {
         WebApp.setShowFooter(true);        
         WebApp.setBodyLayout('video-player');
+        WebApp.setDataSource('data/videos.json');
         Footer.setBackButton(true);
         Footer.setBackButtonText("Videos");
         Footer.setBackPage("#/videos");
