@@ -1,12 +1,12 @@
 {
     "home": [
-       
+
         {
             "id": 1,
             "active": true,
             "title": "Model It Out",
             "description": "DESCR HERE",
-            "url": "#/apps/model-it",
+            "url": "#!/apps/model-it",
             "placeholder": {
                 "image": "/assets/images/menu/posterframes/climate_evidence_chart.jpg",
                 "width":476,
@@ -18,7 +18,7 @@
             "active": true,
             "title": "Videos",
             "description": "Watch videos about modeling and computer systems in the atmospheric sciences",
-            "url": "#/videos",
+            "url": "#!/videos",
             "placeholder": {
                 "image": "/assets/images/menu/posterframes/musical_data.jpg",
                 "mp4": "/assets/videos/menu/musical_data.mp4",
@@ -34,7 +34,7 @@
             "active": true,
             "title": "Planetary Bands, Warming World",
             "description": "<p></p>",
-            "url": "#/videos/music_data",
+            "url": "#!/videos/music_data",
             "placeholder": {
                 "image": "/assets/images/menu/posterframes/musical_data.jpg",
                 "thumb": "/assets/images/menu/musical_data-thumb.jpg",
@@ -49,7 +49,7 @@
             "active": true,
             "title": "Climate Detective",
             "description": "<p></p>",
-            "url": "#/videos/detective",
+            "url": "#!/videos/detective",
             "placeholder": {
                 "image": "/assets/images/menu/posterframes/jerrycap.jpg",
                 "thumb": "/assets/images/menu/jerrycap-thumb.jpg",
@@ -64,7 +64,7 @@
             "active": true,
             "title": "Greenland's Ice Layers",
             "description": "<p></p>",
-            "url": "#/videos/greenland",
+            "url": "#!/videos/greenland",
             "placeholder": {
                 "image": "/assets/images/menu/posterframes/climate_evidence_greenland.jpg",
                 "thumb": "/assets/images/menu/climate_evidence_greenland-thumb.jpg",

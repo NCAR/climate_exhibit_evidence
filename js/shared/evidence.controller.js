@@ -17,20 +17,20 @@
     function videosCtrl(ContentData, Footer, WebApp) {
         WebApp.setShowFooter(true);
         WebApp.setBodyLayout('videos');
-        WebApp.setMenuList('videos'); 
+        WebApp.setMenuList('videos');
         WebApp.setCols(3);
         WebApp.setDataSource('data/menu_main.json');
         WebApp.setHeaderClass("larger");
-        Footer.setBackButton(false);     
-        Footer.setPageTitle("Videos");       
+        Footer.setBackButton(false);
+        Footer.setPageTitle("Videos");
     }
     playerCtrl.$inject = ['Footer','WebApp'];
     function playerCtrl(Footer, WebApp) {
-        WebApp.setShowFooter(true);        
+        WebApp.setShowFooter(true);
         WebApp.setBodyLayout('video-player');
         WebApp.setDataSource('data/videos.json');
         Footer.setBackButton(true);
         Footer.setBackButtonText("Videos");
-        Footer.setBackPage("#/videos");
+        Footer.setBackPage("#!/videos");
     };
 })();

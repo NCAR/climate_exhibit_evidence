@@ -4,8 +4,8 @@
         .controller('modelItCtrl', modelItCtrl);
     modelItCtrl.$inject = ['$rootScope', '$scope', 'ContentData', 'Footer', 'WebApp'];
     function modelItCtrl($rootScope, $scope, ContentData, Footer, WebApp) {
-        WebApp.setShowFooter(true);       
-        Footer.setBackButton(false);       
+        WebApp.setShowFooter(true);
+        Footer.setBackButton(false);
         Footer.setPageTitle("Model It Out");
         $scope.allFactors = [];
         $scope.selectedFactor = {};
@@ -52,10 +52,10 @@
 
 
         ContentData('data/modelItOut/model_it_out.json')
-            .success(processData);
+            .then(processData);
 
         function processData(list) {
-            $scope.data = list['data'];
+            $scope.data = list.data['data'];
             $scope.allFactors = $scope.data.factors;
             $scope.tempLimit = $scope.data.temp_limit;
             $scope.historicalData = $scope.data.historical_data;
@@ -197,7 +197,7 @@
 
 
             var options_stacked = {
-                /*animation : 
+                /*animation :
                   { duration: 1000,
                     easing: 'out',
                     startup: true
@@ -315,7 +315,7 @@
                         color: 'transparent'
                     }
                 },
-                //chartArea:{left:0,top:"64.5%",width:"100%", height:"1000px"}, 
+                //chartArea:{left:0,top:"64.5%",width:"100%", height:"1000px"},
                 chartArea: {
                     left: 0,
                     top: 0,
@@ -400,12 +400,12 @@
 
     /*Example1
     var data = new google.visualization.DataTable();
-     
+
     data.addColumn('number', 'Initial Value');
     data.addColumn('number', 'Doubled');
     data.addColumn('number', 'Squared');
     data.addColumn('number', 'Plus 50');
-     
+
     var x;
     for (x = 0; x <= 10; x++) {
       data.addRow([x, 2 * x, x* x, x+50]);

@@ -6,7 +6,7 @@
             "active": true,
             "title": "Planetary Bands, Warming World",
             "description": "<p>Based on surface temperature analysis from NASA’s Goddard Institute for Space Studies, the composition \"Planetary Bands, Warming World\" uses music to create a visceral encounter with more than a century’s worth of weather data collected across the northern half of the planet.</p><p><strong>Credit:</strong> University of Minnesota student Daniel Crawford and geography professor Scott St. George</p>",
-            "url": "#/videos/music_data",
+            "url": "#!/videos/music_data",
             "placeholder": {
                 "image": "/assets/images/menu/posterframes/musical_data.jpg",
                 "thumb": "/assets/images/menu/musical_data-thumb.jpg",
@@ -42,7 +42,7 @@
             "active": true,
             "title": "Climate Detective",
             "description": "<p>A recent lull in global air temperature warming has led people to ask if the rise in temperatures has stopped or slowed down. In this video by Earth Vision Trust, Jerry Meehl, from the National Center for Atmospheric Research, explains the data that shows our global temperature is, indeed, increasing.</p><p><strong>Credit:</strong> Earth Vision Trust @ http://earthvisioninstitute.org/</p>",
-            "url": "#/videos/detective",
+            "url": "#!/videos/detective",
             "placeholder": {
                 "image": "/assets/images/menu/posterframes/jerrycap.jpg",
                 "thumb": "/assets/images/menu/jerrycap-thumb.jpg",
@@ -78,7 +78,7 @@
             "active": true,
             "title": "Greenland's Ice Layers",
             "description": "<p>This animation shows a new 3D age map of the Greenland Ice Sheet and explains how it was created and describes the three distinct periods of climate that are evident within the ice sheet.</p><p><strong>Credit:</strong> NASA's Scientific Visualization Studio</p>",
-            "url": "#/videos/greenland",
+            "url": "#!/videos/greenland",
             "placeholder": {
                 "image": "/assets/images/menu/posterframes/climate_evidence_greenland.jpg",
                 "thumb": "/assets/images/menu/climate_evidence_greenland-thumb.jpg",
